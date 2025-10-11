@@ -23,10 +23,12 @@ const Header = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
           <div className="flex h-10 w-10 items-center justify-center rounded bg-primary">
-            <span className="font-heading text-xl font-bold text-primary-foreground">B</span>
+            <span className="font-heading text-xl font-bold text-primary-foreground">
+              B
+            </span>
           </div>
           <span className="font-heading text-xl font-bold uppercase tracking-tight">
-            Ballsbrige <span className="text-accent">Construction</span>
+            Ballsbridge <span className="text-accent">Construction</span>
           </span>
         </Link>
 
@@ -43,7 +45,11 @@ const Header = () => {
               {item.name}
             </Link>
           ))}
-          <Button variant="default" size="sm" className="ml-4 bg-accent hover:bg-accent-hover">
+          <Button
+            variant="default"
+            size="sm"
+            className="ml-4 bg-accent hover:bg-accent-hover"
+          >
             Get a Quote
           </Button>
         </nav>
@@ -54,7 +60,11 @@ const Header = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
-          {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {isMenuOpen ? (
+            <X className="h-6 w-6" />
+          ) : (
+            <Menu className="h-6 w-6" />
+          )}
         </button>
       </div>
 
@@ -74,7 +84,10 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <Button variant="default" className="bg-accent hover:bg-accent-hover">
+            <Button
+              variant="default"
+              className="bg-accent hover:bg-accent-hover"
+            >
               Get a Quote
             </Button>
           </nav>
