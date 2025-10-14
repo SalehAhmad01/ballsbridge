@@ -45,13 +45,15 @@ const Header = () => {
               {item.name}
             </Link>
           ))}
-          <Button
-            variant="default"
-            size="sm"
-            className="ml-4 bg-accent hover:bg-accent-hover"
-          >
-            Get a Quote
-          </Button>
+          <Link to="/news">
+            <Button
+              variant="default"
+              size="sm"
+              className="ml-4 bg-accent hover:bg-accent-hover"
+            >
+              Blog / News
+            </Button>
+          </Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -84,12 +86,14 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <Button
-              variant="default"
-              className="bg-accent hover:bg-accent-hover"
-            >
-              Get a Quote
-            </Button>
+            <Link to="/news" onClick={() => setIsMenuOpen(false)}>
+              <Button
+                variant="default"
+                className="bg-accent hover:bg-accent-hover"
+              >
+                Blog / News
+              </Button>
+            </Link>
           </nav>
         </div>
       )}

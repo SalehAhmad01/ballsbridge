@@ -21,18 +21,19 @@ const Hero = () => {
             Building landmarks. Delivering on time.
           </h1>
           <p className="text-lg text-white/90 sm:text-xl mb-8 max-w-2xl leading-relaxed">
-            Commercial, residential and civil construction across Nigeria. Safety-first, budget-focused, quality guaranteed.
+            Commercial, residential and civil construction across Nigeria.
+            Safety-first, budget-focused, quality guaranteed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-accent hover:bg-accent-hover text-accent-foreground font-semibold text-base shadow-xl"
             >
-              Request a Quote
+              Blog / News
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
+            <Button
+              size="lg"
+              variant="outline"
               className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold text-base"
             >
               See Projects
