@@ -1,5 +1,13 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+} from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -33,26 +41,41 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <div className="flex h-10 w-10 items-center justify-center rounded bg-accent">
-                <span className="font-heading text-xl font-bold text-accent-foreground">B</span>
+                <span className="font-heading text-xl font-bold text-accent-foreground">
+                  B
+                </span>
               </div>
               <span className="font-heading text-lg font-bold uppercase tracking-tight">
                 Ballsbrige
               </span>
             </div>
             <p className="text-white/70 text-sm mb-4 leading-relaxed">
-              Building landmarks across Nigeria with safety-first, budget-focused, quality-guaranteed construction services.
+              Building landmarks across Nigeria with safety-first,
+              budget-focused, quality-guaranteed construction services.
             </p>
             <div className="flex space-x-3">
-              <a href="#" className="text-white/70 hover:text-accent transition-colors">
+              <a
+                href="#"
+                className="text-white/70 hover:text-accent transition-colors"
+              >
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-white/70 hover:text-accent transition-colors">
+              <a
+                href="#"
+                className="text-white/70 hover:text-accent transition-colors"
+              >
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-white/70 hover:text-accent transition-colors">
+              <a
+                href="#"
+                className="text-white/70 hover:text-accent transition-colors"
+              >
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-white/70 hover:text-accent transition-colors">
+              <a
+                href="#"
+                className="text-white/70 hover:text-accent transition-colors"
+              >
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
@@ -64,7 +87,10 @@ const Footer = () => {
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <Link to={link.href} className="text-white/70 hover:text-accent text-sm transition-colors">
+                  <Link
+                    to={link.href}
+                    className="text-white/70 hover:text-accent text-sm transition-colors"
+                  >
                     {link.name}
                   </Link>
                 </li>
@@ -77,7 +103,10 @@ const Footer = () => {
             <ul className="space-y-2">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
-                  <Link to={link.href} className="text-white/70 hover:text-accent text-sm transition-colors">
+                  <Link
+                    to={link.href}
+                    className="text-white/70 hover:text-accent text-sm transition-colors"
+                  >
                     {link.name}
                   </Link>
                 </li>
@@ -91,17 +120,23 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-white/70">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-accent" />
-                <span>123 Construction Avenue, Victoria Island, Lagos, Nigeria</span>
+                <span>ADMIRALITY NAVY TOWN , ABUJA, Nigeria</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 flex-shrink-0 text-accent" />
-                <a href="tel:+234XXXXXXXXX" className="hover:text-accent transition-colors">
+                <a
+                  href="tel:+234XXXXXXXXX"
+                  className="hover:text-accent transition-colors"
+                >
                   +234-XXX-XXXX-XXX
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 flex-shrink-0 text-accent" />
-                <a href="mailto:info@ballsbrige.com" className="hover:text-accent transition-colors">
+                <a
+                  href="mailto:info@ballsbrige.com"
+                  className="hover:text-accent transition-colors"
+                >
                   info@ballsbrige.com
                 </a>
               </li>
@@ -119,7 +154,10 @@ const Footer = () => {
             <Link to="/terms" className="hover:text-accent transition-colors">
               Terms of Service
             </Link>
-            <Link to="/accessibility" className="hover:text-accent transition-colors">
+            <Link
+              to="/accessibility"
+              className="hover:text-accent transition-colors"
+            >
               Accessibility
             </Link>
           </div>

@@ -11,7 +11,7 @@ const BlogList = () => {
         "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=60",
       excerpt:
         "Safety is our top priority. Discover the strategies and daily practices that keep our workers and clients safe on construction sites.",
-      author: "Engr. Musa Ali",
+      author: "Engr. Mallam",
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ const BlogList = () => {
         "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=60",
       excerpt:
         "A look at our planning and teamwork that helped deliver one of Abuja’s most important infrastructure projects ahead of schedule.",
-      author: "Fatima Yusuf",
+      author: "Adamu Abuja",
     },
     {
       id: 4,
@@ -41,18 +41,19 @@ const BlogList = () => {
         "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=60",
       excerpt:
         "Using low-quality concrete can cost millions. Here’s how BallsBridge ensures top-grade materials for every foundation we pour.",
-      author: "Engr. Hassan Bello",
+      author: "Engr. Hamza Kano",
     },
-    {
-      id: 5,
-      title: "The Future of Green Construction in Nigeria",
-      date: "June 10, 2025",
-      image:
-        "https://images.unsplash.com/photo-1529429611273-8d37d87d3d0c?auto=format&fit=crop&w=800&q=60",
-      excerpt:
-        "Learn how we’re incorporating eco-friendly materials and sustainable designs to reduce environmental impact in all our projects.",
-      author: "Zainab Ibrahim",
-    },
+  {
+  id: 5,
+  title: "The Future of Green Construction in Nigeria",
+  date: "June 10, 2025",
+  image:
+    "https://ccemagazine.com/wp-content/uploads/sites/11/2025/04/types-of-building-construction-types.png",
+  excerpt:
+    "Learn how we’re incorporating eco-friendly materials and sustainable designs to reduce environmental impact in all our projects.",
+  author: "Tayyib Danpullo",
+}
+
   ]);
 
   return (

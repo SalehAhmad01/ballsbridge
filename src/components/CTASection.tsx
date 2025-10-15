@@ -32,7 +32,7 @@ const CTASection = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold text-base"
+              className="border-2 border-white text-accent hover:bg-white hover:text-primary font-semibold text-base"
             >
               Call Us: +234-XXX-XXXX-XXX
             </Button>

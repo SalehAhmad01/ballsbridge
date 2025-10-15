@@ -34,7 +34,7 @@ const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold text-base"
+              className="border-2 border-accent bg-accent text-white hover:bg-white hover:text-accent font-semibold text-base"
             >
               See Projects
             </Button>
