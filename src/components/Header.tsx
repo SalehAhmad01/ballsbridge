@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "../assets/logo/Ballsbridgelogo.jpg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,8 +21,12 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
-        {/* Logo */}
-        <Link to="/" className="flex items-center space-x-2">
+         <img
+            src={logo}
+            alt="Ballsbridge Contractors Ltd Logo"
+            className="h-10 w-auto"
+          />
+        {/* <Link to="/" className="flex items-center space-x-2">
           <div className="flex h-10 w-10 items-center justify-center rounded bg-primary">
             <span className="font-heading text-xl font-bold text-primary-foreground">
               B
@@ -30,7 +35,7 @@ const Header = () => {
           <span className="font-heading text-xl font-bold uppercase tracking-tight">
             Ballsbridge <span className="text-accent">Construction</span>
           </span>
-        </Link>
+        </Link> */}
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex md:items-center md:gap-6">
