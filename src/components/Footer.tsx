@@ -120,7 +120,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-white/70">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-accent" />
-                <span>ADMIRALITY NAVY TOWN , ABUJA, Nigeria</span>
+                <span>Suit 01, Nusaiba Towers, Plot 117, Ahmadu Bello Way, Mabushi, Abuja.</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 flex-shrink-0 text-accent" />
@@ -128,7 +128,7 @@ const Footer = () => {
                   href="tel:+234XXXXXXXXX"
                   className="hover:text-accent transition-colors"
                 >
-                  +234-XXX-XXXX-XXX
+                  +234 803 376 9333
                 </a>
               </li>
               <li className="flex items-center">
@@ -137,7 +137,7 @@ const Footer = () => {
                   href="mailto:info@ballsbrige.com"
                   className="hover:text-accent transition-colors"
                 >
-                  info@ballsbrige.com
+                  halifa@ballsbridgecontractors.com
                 </a>
               </li>
             </ul>

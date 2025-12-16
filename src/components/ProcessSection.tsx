@@ -44,8 +44,8 @@ const ProcessSection = () => {
           {steps.map((step, index) => (
             <div key={index} className="relative">
               <div className="flex flex-col items-center text-center">
-                <div className="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                  <step.icon className="h-10 w-10" strokeWidth={1.5} />
+                <div className="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-accent/10">
+                  <step.icon className="h-10 w-10 text-accent" strokeWidth={2} />
                 </div>
                 <div className="absolute top-8 -left-8 font-heading text-7xl font-bold text-secondary opacity-50 -z-10">
                   {step.number}

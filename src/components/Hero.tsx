@@ -21,8 +21,10 @@ const Hero = () => {
             Building landmarks. Delivering on time.
           </h1>
           <p className="text-lg text-white/90 sm:text-xl mb-8 max-w-2xl leading-relaxed">
-            Commercial, residential and civil construction across Nigeria.
-            Safety-first, budget-focused, quality guaranteed.
+           From project planning and construction to solar installations and
+                 long-term maintenance, Ballsbridge Contractors Ltd delivers reliable,
+                       high-quality solutions for public and private projects.
+
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button

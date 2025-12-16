@@ -27,7 +27,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-secondary/50">
+    <section className="py-20 bg-red-500 text-white">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="font-heading text-3xl font-bold sm:text-4xl mb-4">

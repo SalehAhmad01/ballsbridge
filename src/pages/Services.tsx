@@ -3,6 +3,11 @@ import Footer from "@/components/Footer";
 import { Building2, Home, Wrench, Hammer, ClipboardList, PenTool } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import residentialImage from "@/assets/residential-project.jpg";
+import craftsmanshipImage from "@/assets/craftsmanship.jpg";
+import solarImage from "@/assets/images/solor-pic.jpg";
+import roadImage from "@/assets/images/road-cons.jpg";
 
 const Services = () => {
   const services = [
@@ -92,40 +97,53 @@ const Services = () => {
           </div>
         </section>
 
-        {/* Services Grid */}
+        {/* Services (brochure style) */}
         <section className="py-20 bg-background">
           <div className="container">
-            <div className="grid gap-8 lg:gap-12">
-              {services.map((service, index) => (
-                <Card key={index} className="border-border hover:border-accent transition-colors duration-300">
-                  <CardHeader>
-                    <div className="flex items-start gap-4">
-                      <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-accent/10 flex-shrink-0">
-                        <service.icon className="h-7 w-7 text-accent" strokeWidth={2} />
+            <div className="space-y-12">
+              {services.map((service, index) => {
+                const images = [residentialImage, craftsmanshipImage, solarImage, roadImage, residentialImage, craftsmanshipImage];
+                const img = images[index] || residentialImage;
+                return (
+                  <div key={service.title} className={`grid gap-6 md:grid-cols-2 items-center overflow-hidden rounded-lg shadow-sm bg-white`}>
+                    <div className={`relative ${index % 2 === 0 ? "md:order-1" : "md:order-2"}`}>
+                      <img src={img} alt={service.title} className="w-full h-64 md:h-[360px] object-cover" />
+                      <svg className="absolute left-0 bottom-0 -translate-y-6 md:-translate-y-8" width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 120 L120 120 L120 0 Z" fill="var(--primary)" />
+                      </svg>
+                      <svg className="absolute right-0 bottom-0 -translate-y-6 md:-translate-y-8" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M80 0 L80 80 L0 80 Z" fill="var(--accent)" />
+                      </svg>
+                    </div>
+
+                    <div className={`p-8 ${index % 2 === 0 ? "md:order-2" : "md:order-1"}`}>
+                      <div className="flex items-center gap-4 mb-4">
+                        <span className="inline-block bg-accent text-white px-2 py-1 rounded text-sm font-semibold">Our</span>
+                        <h3 className="text-2xl md:text-3xl font-serif text-primary">Services</h3>
                       </div>
-                      <div className="flex-1">
-                        <CardTitle className="font-heading text-2xl mb-3">{service.title}</CardTitle>
-                        <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+
+                      <h4 className="text-xl font-heading font-bold mb-3">{service.title}</h4>
+                      <p className="text-gray-700 mb-4">{service.description}</p>
+
+                      <ul className="space-y-3 mb-6">
+                        {service.features.map((p, i) => (
+                          <li key={i} className="flex items-start gap-3">
+                            <span className="mt-1 h-2 w-2 rounded-full bg-primary flex-shrink-0"></span>
+                            <span className="text-gray-700 text-sm">{p}</span>
+                          </li>
+                        ))}
+                      </ul>
+
+                      <div className="flex gap-4 items-center">
+                        <Link to="/projects" className="text-primary font-semibold hover:underline">View case study →</Link>
+                        <Link to="/contact">
+                          <Button size="sm" className="bg-accent text-white">Request a Quote</Button>
+                        </Link>
                       </div>
                     </div>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4 mt-4">
-                      {service.features.map((feature, idx) => (
-                        <div key={idx} className="flex items-center">
-                          <div className="h-1.5 w-1.5 rounded-full bg-accent mr-2"></div>
-                          <span className="text-sm text-foreground">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                    <div className="mt-6">
-                      <Button variant="link" className="text-accent hover:text-accent-hover p-0 h-auto font-semibold">
-                        Request a consultation →
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>

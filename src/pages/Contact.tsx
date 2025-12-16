@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Mail, Phone, MapPin } from "lucide-react";
+import logo from "@/assets/logo/Ballsbridgelogo.jpg";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -53,26 +54,64 @@ const Contact = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {/* Contact Info */}
-            <div className="space-y-6 bg-white shadow-lg p-8 rounded-2xl border border-gray-100">
-              <h2 className="text-2xl font-semibold text-blue-700 mb-4">
-                Contact Information
-              </h2>
+            {/* Branded Contact Panel */}
+            <div className="relative overflow-hidden rounded-2xl p-12 bg-primary text-primary-foreground">
+              <img src={logo} alt="Ballsbridge Contractors" className="h-16 mb-8 object-contain" />
 
-              <div className="flex items-center gap-4">
-                <MapPin className="h-6 w-6 text-blue-600" />
-                <p>123 Example Street, Abuja, Nigeria</p>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="rounded-full bg-white p-2 flex items-center justify-center">
+                    <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center text-white">
+                      <MapPin className="h-3 w-3" strokeWidth={2} />
+                    </div>
+                  </div>
+                  <div>
+                    <p className="font-semibold">Suit 01, Nusaiba Towers, Plot 117, Ahmadu Bello Way, Mabushi, Abuja.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="rounded-full bg-white p-2 flex items-center justify-center">
+                    <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center text-white">
+                      <MapPin className="h-3 w-3" strokeWidth={2} />
+                    </div>
+                  </div>
+                  <div>
+                    <p className="font-semibold">10 Wharf Road Apapa, Lagos.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="rounded-full bg-white p-2 flex items-center justify-center">
+                    <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center text-white">
+                      <Phone className="h-3 w-3" strokeWidth={2} />
+                    </div>
+                  </div>
+                  <div>
+                    <p className="font-semibold">+234 803 376 9333</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="rounded-full bg-white p-2 flex items-center justify-center">
+                    <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center text-white">
+                      <Mail className="h-3 w-3" strokeWidth={2} />
+                    </div>
+                  </div>
+                  <div>
+                    <p className="font-semibold">halifa@ballsbridgecontractors.com</p>
+                  </div>
+                </div>
               </div>
 
-              <div className="flex items-center gap-4">
-                <Phone className="h-6 w-6 text-green-600" />
-                <p>+234 700 000 0000</p>
-              </div>
+              {/* Decorative shapes (triangle + diagonal) */}
+              <svg className="absolute right-0 bottom-0 w-48 h-48" viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="100,0 100,100 0,100" style={{ fill: "var(--accent)" }} />
+              </svg>
 
-              <div className="flex items-center gap-4">
-                <Mail className="h-6 w-6 text-red-600" />
-                <p>info@ballsbridge.ng</p>
-              </div>
+              <svg className="absolute left-0 bottom-0 w-80 h-48 opacity-10" viewBox="0 0 200 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="0,0 200,100 0,100" style={{ fill: "white" }} />
+              </svg>
             </div>
 
             {/* Contact Form */}
