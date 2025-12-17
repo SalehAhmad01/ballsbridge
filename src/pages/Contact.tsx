@@ -129,8 +129,8 @@ const Contact = () => {
                     type="text"
                     name="from_name"
                     required
-                    className="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-blue-600"
-                    placeholder="John Doe"
+                    className="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-red-600"
+                    placeholder="Khalifa Rabiu"
                   />
                 </div>
 
@@ -142,7 +142,7 @@ const Contact = () => {
                     type="email"
                     name="from_email"
                     required
-                    className="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                    className="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-red-600"
                     placeholder="you@example.com"
                   />
                 </div>
@@ -154,7 +154,7 @@ const Contact = () => {
                   <textarea
                     name="message"
                     required
-                    className="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                    className="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-red-600"
                     rows={5}
                     placeholder="Write your message..."
                   ></textarea>

@@ -4,7 +4,7 @@ import residentialImage from "@/assets/residential-project.jpg";
 import craftsmanshipImage from "@/assets/craftsmanship.jpg";
 import { Link } from "react-router-dom";
 
-import Project from "@/pages/projects";
+// import Project from "@/pages/projects";
 
 const ProjectsSection = () => {
   const projects = [
