@@ -181,7 +181,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import general from "@/assets/images/general.jpg";
 import last from "@/assets/images/last.webp";
-import Maintenance from "@/assets/images/maintenance.jpg";
+import Maintenance from "@/assets/images/Maintenance.jpg";
 import solar from "@/assets/images/solar.jpg";
 import supply from "@/assets/images/supply.jpeg";
 import blueprint from "@/assets/images/blueprint.webp";
