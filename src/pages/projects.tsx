@@ -4,26 +4,27 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ShieldCheck, Users, FileSearch, ClipboardCheck, PackageCheck, Smile } from "lucide-react";
+import type { ComponentType, SVGProps } from "react";
 import imperative from "@/assets/images/imperative.jpg";
 import team from "@/assets/images/team.jpg";
 import compliance from "@/assets/images/Compliance.png";
 import skill from "@/assets/images/skill.png";
 
 
-const assuranceItems = [
+const assuranceItems: { icon: ComponentType<SVGProps<SVGSVGElement>>; title: string; description: string; image?: string }[] = [
   {
     icon: ShieldCheck,
     title: "Regulatory Compliance",
     description:
       "All projects and materials meet or exceed legal requirements, industry benchmarks, and safety standards.",
-   
+    image: undefined,
   },
   {
     icon: Users,
     title: "Skilled & Experienced Team",
     description:
       "Our professionals include contractors, engineers, architects, and project managers with proven industry expertise.",
-    
+                     
   },
   {
     icon: FileSearch,
@@ -114,12 +115,12 @@ export default function Projects() {
               </h2>
               <p className="text-muted-foreground text-lg">
                 At BallsBridge Contractors Limited, we understand the critical 
-importance of quality assurance in ensuring the success of our 
-projects and the satisfaction of our clients. Our commitment to 
-excellence is reflected in our rigorous quality assurance processes
-that are integrated into every aspectof our operations, from 
-contracting to supply services. Here's how we uphold our 
-standards of quality
+                 importance of quality assurance in ensuring the success of our 
+                 projects and the satisfaction of our clients. Our commitment to 
+                 excellence is reflected in our rigorous quality assurance processes
+                 that are integrated into every aspectof our operations, from 
+                 contracting to supply services. Here's how we uphold our 
+                 standards of quality
               </p>
             </div>
 
