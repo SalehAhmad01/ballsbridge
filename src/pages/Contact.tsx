@@ -66,7 +66,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div>
-                    <p className="font-semibold">Suit 01, Nusaiba Towers, Plot 117, Ahmadu Bello Way, Mabushi, Abuja.</p>
+                    <p className="font-semibold">37 Kwame Nkrumah Crescent Asokoro, Abuja.</p>
                   </div>
                 </div>
 
@@ -99,7 +99,8 @@ const Contact = () => {
                     </div>
                   </div>
                   <div>
-                    <p className="font-semibold">halifa@ballsbridgecontractors.com</p>
+                    <p className="font-semibold">ballsbridgecontractorsltd@gmail.com
+                    </p>
                   </div>
                 </div>
               </div>
@@ -130,7 +131,7 @@ const Contact = () => {
                     name="from_name"
                     required
                     className="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-red-600"
-                    placeholder="Khalifa Rabiu"
+                    placeholder="Saleh Ahmad"
                   />
                 </div>
 
@@ -163,20 +164,18 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSending}
-                  className={`w-full py-3 rounded-xl text-white transition-all duration-300 ${
-                    isSending ? "bg-blue-400" : "bg-blue-700 hover:bg-blue-800"
-                  }`}
+                  className={`w-full py-3 rounded-xl text-white transition-all duration-300 ${isSending ? "bg-blue-400" : "bg-blue-700 hover:bg-blue-800"
+                    }`}
                 >
                   {isSending ? "Sending..." : "Send Message"}
                 </button>
 
                 {message && (
                   <p
-                    className={`text-center text-sm mt-3 font-medium ${
-                      message.startsWith("✅")
-                        ? "text-green-600"
-                        : "text-red-600"
-                    }`}
+                    className={`text-center text-sm mt-3 font-medium ${message.startsWith("✅")
+                      ? "text-green-600"
+                      : "text-red-600"
+                      }`}
                   >
                     {message}
                   </p>

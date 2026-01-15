@@ -46,7 +46,7 @@ const Footer = () => {
                 </span>
               </div>
               <span className="font-heading text-lg font-bold uppercase tracking-tight">
-                Ballsbrige
+                Ballsbridge
               </span>
             </div>
             <p className="text-white/70 text-sm mb-4 leading-relaxed">
@@ -120,12 +120,12 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-white/70">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-accent" />
-                <span>Suit 01, Nusaiba Towers, Plot 117, Ahmadu Bello Way, Mabushi, Abuja.</span>
+                <span>37 Kwame Nkrumah Crescent Asokoro, Abuja.</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 flex-shrink-0 text-accent" />
                 <a
-                  href="tel:+234XXXXXXXXX"
+                  href="tel:+234803 376 9333"
                   className="hover:text-accent transition-colors"
                 >
                   +234 803 376 9333
@@ -134,10 +134,11 @@ const Footer = () => {
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 flex-shrink-0 text-accent" />
                 <a
-                  href="mailto:info@ballsbrige.com"
+                  href="mailto:ballsbridgecontractorsltd@gmail.com"
                   className="hover:text-accent transition-colors"
                 >
-                  halifa@ballsbridgecontractors.com
+                  ballsbridgecontractorsltd@gmail.com
+
                 </a>
               </li>
             </ul>
@@ -146,7 +147,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-white/60">
-          <p>© {currentYear} Ballsbrige Construction. All rights reserved.</p>
+          <p>© {currentYear} Ballsbridge Construction. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="hover:text-accent transition-colors">
               Privacy Policy

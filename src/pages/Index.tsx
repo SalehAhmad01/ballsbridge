@@ -6,6 +6,7 @@ import ProjectsSection from "@/components/ProjectsSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
 import ProcessSection from "@/components/ProcessSection";
+import Partners from "@/components/Partners";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
@@ -21,6 +22,7 @@ const Index = () => {
         <WhyChooseUs />
         <Testimonials />
         <ProcessSection />
+        <Partners />
         <CTASection />
       </main>
       <Footer />

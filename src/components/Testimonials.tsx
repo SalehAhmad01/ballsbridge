@@ -1,56 +1,82 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Quote } from "lucide-react";
+import MDProfileImage from "../assets/images/md.jpeg";
 
 const Testimonials = () => {
-  const testimonials = [
-    {
-      quote: "Ballsbrige Construction delivered our office complex 3 weeks ahead of schedule and under budget. Their attention to safety and quality was exceptional.",
-      author: "Chidi Okonkwo",
-      position: "CEO, TechHub Nigeria",
-      company: "TechHub Nigeria",
-    },
-    {
-      quote: "Professional, reliable, and always transparent. They transformed our vision into reality with minimal disruption to our operations.",
-      author: "Aisha Mohammed",
-      position: "Facilities Director",
-      company: "Federal Ministry of Works",
-    },
-    {
-      quote: "The best construction partner we've worked with. Their project management and communication throughout the build was outstanding.",
-      author: "Emeka Adeleke",
-      position: "Property Developer",
-      company: "Adeleke Properties Ltd",
-    },
-  ];
-
   return (
-    <section className="py-20 bg-red-500 text-white">
+    <section className="py-20 bg-background/50">
       <div className="container">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <h2 className="font-heading text-3xl font-bold sm:text-4xl mb-4">
-            What Our Clients Say
+            Leadership & Vision
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Trusted by leading organizations across Nigeria
+            Driving excellence in construction and development with integrity and innovation.
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-3">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="border-border hover:border-accent transition-colors duration-300">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* MD Image and Bio */}
+          <div className="flex flex-col items-center lg:items-start space-y-6">
+            <div className="relative w-full max-w-md aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl group">
+              <img
+                src={MDProfileImage}
+                alt="Engr. Halifa - Managing Director"
+                className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500 will-change-transform"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 text-white translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                <h3 className="text-2xl font-bold font-heading">Engr. Halifa Rabi'u</h3>
+                <p className="text-white/90 font-medium">Managing Director</p>
+              </div>
+            </div>
+
+            <div className="max-w-md text-center lg:text-left">
+              <p className="text-lg text-muted-foreground leading-relaxed italic">
+                "Our mission is to build more than just structures; we build trust, community, and the future. Every project is a testament to our commitment to excellence."
+              </p>
+            </div>
+          </div>
+
+          {/* Mission and Vision */}
+          <div className="space-y-8">
+            <Card className="border-l-4 border-l-primary shadow-lg bg-card hover:shadow-xl transition-shadow duration-300">
               <CardContent className="pt-6">
-                <Quote className="h-10 w-10 text-accent/30 mb-4" />
-                <p className="text-foreground mb-6 italic leading-relaxed">
-                  "{testimonial.quote}"
-                </p>
-                <div className="border-t border-border pt-4">
-                  <p className="font-heading font-semibold text-foreground">{testimonial.author}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.position}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.company}</p>
+                <div className="mb-4 flex items-center gap-4">
+                  <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-2xl">
+                    🎯
+                  </div>
+                  <h3 className="text-2xl font-bold font-heading">Our Mission</h3>
                 </div>
+                <p className="text-muted-foreground leading-relaxed text-lg">
+                  Our mission is to exceed
+                  client expectations by delivering
+                  exceptional services, fostering
+                  relationships built on trust, and
+                  contributing to the growth and
+                  development of any industry
+                  we work with.
+
+                </p>
               </CardContent>
             </Card>
-          ))}
+
+            <Card className="border-l-4 border-l-accent shadow-lg bg-card hover:shadow-xl transition-shadow duration-300">
+              <CardContent className="pt-6">
+                <div className="mb-4 flex items-center gap-4">
+                  <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center text-2xl">
+                    👁️
+                  </div>
+                  <h3 className="text-2xl font-bold font-heading">Our Vision</h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed text-lg">
+                  Our vision is to be the preferred
+                  choice for contractors and
+                  suppliers, known for our reliability,
+                  quality workmanship, and innovative
+                  solutions.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>

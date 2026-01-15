@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import residentialImage from "@/assets/residential-project.jpg";
-import craftsmanshipImage from "@/assets/craftsmanship.jpg";
+import residentialImage from "@/assets/project2.jpeg";
+import craftsmanshipImage from "@/assets/project1.jpeg";
 import { Link } from "react-router-dom";
 
 // import Project from "@/pages/projects";
