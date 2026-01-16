@@ -8,6 +8,7 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
+import logo from "../assets/logo/Ballsbridgelogo.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -40,14 +41,18 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded bg-accent">
-                <span className="font-heading text-xl font-bold text-accent-foreground">
+              {/* <span className="font-heading text-xl font-bold text-accent-foreground">
                   B
                 </span>
               </div>
               <span className="font-heading text-lg font-bold uppercase tracking-tight">
                 Ballsbridge
-              </span>
+              </span> */}
+              <img
+                src={logo}
+                alt="Modern construction site with workers and crane"
+                className="h-12 w-auto object-contain"
+              />
             </div>
             <p className="text-white/70 text-sm mb-4 leading-relaxed">
               Building landmarks across Nigeria with safety-first,

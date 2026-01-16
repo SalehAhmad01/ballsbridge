@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, X } from "lucide-react";
-import RequestQuoteForm from "@/components/RequestQuoteForm";
+import ContactForm from "@/components/ContactForm";
 
 const CTASection = () => {
   const [showForm, setShowForm] = useState(false);
@@ -52,7 +52,7 @@ const CTASection = () => {
               <X className="h-6 w-6" />
             </button>
 
-            <RequestQuoteForm />
+            <ContactForm />
           </div>
         </div>
       )}

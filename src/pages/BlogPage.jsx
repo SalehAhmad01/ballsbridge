@@ -6,13 +6,13 @@ import Footer from "@/components/Footer";
 
 const BlogPage = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <main>
+      <main className="flex-grow">
         <BlogHero />
         <BlogList />
       </main>
-        <Footer />
+      <Footer />
     </div>
   );
 };
