@@ -217,10 +217,7 @@ Modern browsers supporting ES6+ features:
 
 ## Deployment
 
-The project can be deployed to:
-
-- Lovable's built-in hosting (via Publish button)
-- Custom domains (with paid Lovable plan)
+- Custom domains
 - Any static hosting service (Vercel, Netlify, etc.) via GitHub integration
 
 ## Contact Information

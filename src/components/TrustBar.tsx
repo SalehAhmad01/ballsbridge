@@ -5,7 +5,7 @@ const TrustBar = () => {
     { icon: Calendar, label: "Years in Business", value: "15+" },
     { icon: Users, label: "Projects Completed", value: "500+" },
     { icon: Shield, label: "Safety Record", value: "Zero LTI" },
-    { icon: Award, label: "Certifications", value: "ISO 9001" },
+    // { icon: Award, label: "Certifications", value: "ISO 9001" },
   ];
 
   return (

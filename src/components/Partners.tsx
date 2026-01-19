@@ -73,7 +73,7 @@ const Partners = () => {
                                 <img
                                     src={partner.logo}
                                     alt={partner.name}
-                                    className="w-full h-auto grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100 transition-all duration-300"
+                                    className="w-full h-auto transition-all duration-300"
                                 />
                             ) : (
                                 // Placeholder for when no logo is available
